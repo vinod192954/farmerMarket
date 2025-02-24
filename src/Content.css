@@ -1,0 +1,41 @@
+.content {
+    flex-grow: 1;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Soft gradient */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+  }
+  .content h1{
+    font-size: 80px;
+    padding: 20px;
+  }
+  
+  .content h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  .know-btn{
+    background-color: blue;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+   
+   
+    
+  }
+  .know-btn:hover{
+    transform: scale(1.05);
+  } 

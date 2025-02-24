@@ -1,0 +1,39 @@
+.login-container-options {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    padding: 20px;
+  }
+  
+  .btn {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sign-up {
+    background: linear-gradient(135deg, #4a90e2, #357ab8);
+  }
+  
+  .sign-in {
+    background: linear-gradient(135deg, #555, #333);
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.5);
+  }
+  
