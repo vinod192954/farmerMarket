@@ -39,3 +39,6 @@
   .know-btn:hover{
     transform: scale(1.05);
   } 
+.website-banner{
+  border-radius: 30px;
+}

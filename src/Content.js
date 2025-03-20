@@ -1,23 +1,31 @@
 import React from 'react';
-import './Content.css';
+import { Box, Typography, Button, Container } from '@mui/material';
 
 const Content = () => {
   return (
-    <main className="content">
-        <div>        
-        <div className='website-banner'>
-            <h1>Farmer's Market</h1>
-        </div> 
-        <div>
-            <h2>Welcome to MyStore</h2>
-            <p>Find the best products at the best prices!</p>
-      </div>
-      <button className='know-btn'>Know More</button>
-      </div>
-      <div>
-        <img src="https://res.cloudinary.com/dzmhdzvfb/image/upload/v1740377517/variety-of-fresh-organic-vegetables-and-fruits-in-the-garden_ksalbl.jpg" />
-      </div>
-    </main>
+    <Container sx={{ textAlign: 'center', py: 4 }}>
+      <Box sx={{ bgcolor: '#f5f5f5', p: 4, borderRadius: 2, mb: 3 }}>
+        <Typography variant="h3" sx={{ fontWeight: 'bold', color: '#2E7D32' }}>
+          Farmer's Market
+        </Typography>
+      </Box>
+      <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 1 }}>
+        Welcome to MyStore
+      </Typography>
+      <Typography variant="body1" sx={{ mb: 3 }}>
+        Find the best products at the best prices!
+      </Typography>
+      <Button variant="contained" color="success" size="large">
+        Know More
+      </Button>
+      <Box sx={{ mt: 4 }}>
+        <img
+          src="https://res.cloudinary.com/dzmhdzvfb/image/upload/v1740377517/variety-of-fresh-organic-vegetables-and-fruits-in-the-garden_ksalbl.jpg"
+          alt="Website Banner"
+          style={{ width: '40%', borderRadius: 8 }}
+        />
+      </Box>
+    </Container>
   );
 };
 

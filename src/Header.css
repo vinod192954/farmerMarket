@@ -1,5 +1,5 @@
 .header {
-    background-color: #4a90e2; /* Vibrant blue */
+    background-color: #E07A5F; /* Vibrant blue */
     color: #fff;
     padding: 20px;
     display: flex;
@@ -8,8 +8,10 @@
   }
   
   .logo {
-    font-size: 1.8em;
-    font-weight: bold;
+   height: 85px;
+   width: 85px;
+   border-radius: 85%;
+  
   }
   
   .nav-links {
@@ -30,5 +32,19 @@
   
   .nav-links a:hover {
     color: #ffd700; /* Gold on hover */
+  }
+  .logo-name{
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #024b20;
+  }
+  .logo-container{
+    display: flex;
+    align-items: center;
+    
+  }
+  .logo-description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
   }
   
