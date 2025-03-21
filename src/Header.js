@@ -10,9 +10,10 @@ import {
   MenuItem,
   IconButton,
   Avatar,
+  Badge,
 } from "@mui/material";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-
+import { CartContext } from "./context/CartContext";
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -20,7 +21,7 @@ const Header = () => {
     Boolean(localStorage.getItem("authToken"))
   );
   const [anchorEl, setAnchorEl] = useState(null);
-
+  const { cartItems } = React.useContext(CartContext);
   useEffect(() => {
     const handleStorageChange = () => {
       setIsLoggedIn(Boolean(localStorage.getItem("authToken")));
@@ -79,7 +80,10 @@ const Header = () => {
               Products
             </Button>
             <Button color="inherit" component={Link} to="/cart">
-              Cart
+              Cart{" "}
+              <Badge badgeContent={cartItems.length} color="error" sx={{ ml: 1 }}>
+                🛒
+              </Badge>
             </Button>
             <Button color="inherit" component={Link} to="/watchlist">
               Watchlist
